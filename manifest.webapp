@@ -3,8 +3,8 @@
   "description": "Simulador de bateria  para Firefox Os",
   "launch_path": "/index.html",
   "icons": {
-    "128": "/img/icons-128.png",
-    "60": "/img/icons-60.png"
+    "60": "/img/icons-60.png",
+    "128": "/img/icons-128.png"
   },
   "version": "1.0",
   "developer": {
@@ -12,9 +12,8 @@
     "url": "http://www.giovannycifuentes.hol.es"
   },
   "default_locale": "es",
-  "orientation": ["portrait-primary"],
-  "permissions": {
-
-}
-
+  "orientation": [
+    "landscape"
+  ],
+  "permissions": {}
 }
