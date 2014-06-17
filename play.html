@@ -2,68 +2,69 @@
 <!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8"/>
         <title>Play</title>
-        <meta name="description" content="">
-        <meta name="HandheldFriendly" content="True">
-        <meta name="MobileOptimized" content="320">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="cleartype" content="on">
+        <meta name="description" content=""/>
+        <meta name="HandheldFriendly" content="True"/>
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="cleartype" content="on"/>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/jquery-mobile.css">
-        <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/main.css">
-
-        <script src="js/modernizr.js"></script>
-    </head>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/jquery-mobile.css"/>
+        <link rel="stylesheet" href="css/font-awesome.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+	
+	</head>
     <body>
     	
 	<!-- /#home-page -->
-    <div id="about-page" data-role="page">
+    <div id="about-page" data-role="page" style="background-image: url(img/stage.png);">
    		 <!-- Drums -->
-    	<div id="about-content" data-role="content">
+    	<div id="about-content" data-role="content"> 
 	
-			<table style="text-align: left; width: 428px; height: 363px;"cellpadding="2" cellspacing="2">
+			<table style="text-align: left; width: 428px; height: 363px;">
 			<tbody>
-
 				<tr>
 					<td style=" height: 86px;margin-top: -20px;">
-						<div style="text-align: center;margin-top: -20px;">
-							<img style="width: 130px; height: 80px;" alt="123" src="img/tom.png">
-							<img style="width: 130px; height: 80px;" alt="123"src="img/tom.png">
+						<div style="text-align: left;margin-top: -20px;">
+							<img style="width: 100px; height: 60px;" alt="Tom 1" id ="crash-1" src="img/crash-1.png"/>
+							<img style="width: 100px; height: 80px;" alt="Tom 1" id ="tom-1" src="img/tom.png"/>
+							<img style="width: 100px; height: 80px;" alt="Tom 2" id ="tom-2" src="img/tom.png"/>
+							<img style="width: 100px; height: 60px;" alt="Tom 1" id ="crash-2" src="img/crash-2.png"/>
 						</div>
 					</td>
 				</tr>
 				
 				<tr>
-					<td colspan="3" rowspan="1"style="vertical-align: top; width: 108px; height: 310px;">
+					<td colspan="3" rowspan="1"style="vertical-align: top; width: 108px; height: 310px;"/>
 						<div style="text-align: center;margin-top:-20px">
-							<img style="width: 130px; height: 80px;" alt="123" src="img/plato.png">
-							<img style="width: 130px; height: 80px;" alt="123" src="img/redoble.png">
-							<img style="width: 130px; height: 80px;" alt="123" src="img/ride.png">
+							<img style="width: 130px; height: 80px;" alt="Hit Hat" id ="hit-hat"src="img/hit-hat.png"/>
+							<img style="width: 130px; height: 80px;" alt="Snare"   id ="snare"src="img/snare.png"/>
+							<img style="width: 130px; height: 80px;" alt="Ride"    id ="ride"src="img/ride.png"/>
 						</div>
 						
-						<div style="text-align: center">&nbsp;
-							<img style="width: 100px; height: 120px;" alt="123"src="img/base.png">
-							<img style="width: 170px; height: 120px;" alt="123"src="img/bombo.png">
-							<img style="width: 130px; height: 120px;" alt="123" src="img/tom-piso.png">
+						<div style="text-align: center">&nbsp;&nbsp;
+							<img style="width: 100px; height: 120px;" alt="Hit Hat Close"id ="hit-hat-close"src="img/hit-hat-close.png"/>
+							<img style="width: 160px; height: 120px;" alt="Base Drum"id ="base-drum" src="img/base-drum.png"/>
+							<img style="width: 130px; height: 120px;" alt="Tom Floor"id ="tom-floor" src="img/tom-floor.png"/>
 						</div>
 					</td>
 			</tr>
 		</tbody>
 		</table>
 		<!-- /#Drums -->
-
-    		<a data-role="button" data-transition="pop" href="index.html">Volver</a>
-
+		<a data-role="button" data-transition="pop" href="index.html">Volver</a> 
     	</div>
+		
+		<script src="js/Concurrent.Thread.js"></script>	  	
+		<script src="js/zepto.min.js"></script> 
+	  	<script src="js/sounds.js"></script>
+
+		
 
 	</div>
 	<!-- /#home-page -->
 
-	  <script src="js/jquery.js"></script>
-	  <script src="js/jquery-mobile.js"></script>
-	  <script src="js/script.js"></script>
     </body>
 </html>

@@ -8673,7 +8673,7 @@ if ( xhrSupported ) {
 					} else {
 						xhr.open( s.type, s.url, s.async );
 					}
-
+					
 					// Apply custom fields if provided
 					if ( s.xhrFields ) {
 						for ( i in s.xhrFields ) {
