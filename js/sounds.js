@@ -9,8 +9,9 @@ audio[6]=new Audio('sounds/tom-1.mp3');
 audio[7]=new Audio('sounds/tom-2.mp3');
 audio[8]=new Audio('sounds/crash-1.mp3');
 audio[9]=new Audio('sounds/crash-2.mp3');
+var aud=new Audio('sounds/bateria.mp3');
 
-$(function(){
+$(document).ready(function(){
 		
 		var accion= $('#hit-hat');
 		accion.on('click',function (){
@@ -98,4 +99,30 @@ $(function(){
 		break;
 
 	}
-		}
+	}
+
+	function iniciarSong(){
+		aud.loop = true;
+		aud.play();
+		$('#animationSandbox1').removeClass().addClass('rollIn' + ' animated').
+		one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){
+      		$(this).removeClass();
+    	});
+
+    	$('#animationSandbox2').removeClass().addClass('fadeInLeftBig' + ' animated').
+		one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationendanimationend',function(){
+      	$(this).removeClass();
+   		});
+
+    	$('#animationSandbox3').removeClass().addClass('rotateInUpLeft' + ' animated').
+		one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){
+      	$(this).removeClass();
+    	});
+	}
+
+	function detenerSong(){
+			
+		aud.pause();
+		aud.currentTime = 0;
+	}
+	

@@ -36,8 +36,10 @@
 	<!-- jQuery Mobile CSS bits -->
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" />
 
-	<!-- Custom css -->
-	<link rel="stylesheet" href="css/custom.css" />
+	<!-- Animate css -->
+	<link rel="stylesheet" href="css/animaciones.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<!-- Javascript includes -->
 	<script src="js/jquery-1.10.2.js"></script>
@@ -45,37 +47,61 @@
 	<script src="js/ios-orientationchange-fix.min.js"></script>
 	<script src="js/jquery.mobile-1.4.0.js"></script>
 	<script src="js/application.js"></script>
+	<style>
+		@font-face {
+			font-family: "Rocky";
+			font-style: normal;
+			font-weight: normal;
+			src: url("fonts/Rocky.otf");
+		}
 	
+		#title{
+		font-family: Rocky;
+		line-height: 15px;
+		font-size: 25px;
+		text-decoration:none ;
+		color:white;
+		text-shadow:4px 4px #000;
+	}
+	</style>
 
 </head>
 <body>
 	<!-- home-page -->
+	<div data-role="page" style="background-image: url(img/background.png);">
+		<div style="text-align: right; padding-top: 20%; padding-right: 5%;">
+				<!--PLay-->
+      			<a data-transition="flip" href="play.html" onclick="detenerSong();Concurrent.Thread.create(play, 0);" id="title">
+					<span id="animationSandbox1" style="display: block;">Tocar</span>
+				</a><br>
+				<!--Transiton: slide,slideup,slidedown,pop,fade,flip-->
+				<!--/#PLay-->
 
-		<!--PLay-->
-      	<a data-role="button" data-transition="slidedown" href="play.html">Play</a>
-		<!--Transiton: slide,slideup,slidedown,pop,fade,flip-->
-		<!--/#PLay-->
-	
-		<!--Ejemplo-->
-      	<a data-role="button" data-transition="flip" href="ejemplo.html">Ejemplo</a>
-		<!--/#Ejemplo-->
+				<!--Ejemplo--
+      			<a data-transition="flip" href="ejemplo.html" onclick="detenerSong();Concurrent.Thread.create(play, 1);" id="title">
+					<span id="animationSandbox2" style="display: block;">Ejemplo</span>
+				</a><br>
+				<!--/#Ejemplo-->
 
-		<!--Acerca-->
-      	<a data-role="button" data-transition="slideup" href="acerca.html">Acerca de ...</a>
-		<!--/#Acerca-->
+				<!--Acerca-->
+      			<a data-transition="flip" href="credit.html" onclick="detenerSong();Concurrent.Thread.create(play, 9);" id="title">
+					<span id="animationSandbox3" style="display: block;">Creditos</span>
+				</a><br>
+				<!--/#Acerca-->			
 
-	<!-- /#home-page -->
-
-    <!-- footer -->
-
-    <div id="footer" data-role="footer">
-    	<h1><i class="icon-coffee"></i>Copyright © 2014 Gianci Technologys.</h1>
-    </div>
-
-	<!-- /#footer -->
-    </div>
-
+			    <!-- footer -->
+				<div id="footer">
+    				<h4 style="font-size: 0.8em;">Copyright © 2014 <br>Gianci Technologys.<br>Drumstart V 1.0.</h4>
+	   			</div>
+				<!-- /#footer -->			
 		</div>
+		<!-- /#home-page -->
+		<script src="js/Concurrent.Thread.js"></script>	  	
+		<script src="js/zepto.min.js"></script> 
+	  	<script src="js/sounds.js"></script>
+		<script>
+		iniciarSong();
+		</script>
 	</div>
 </body>
 </html>
