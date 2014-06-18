@@ -1,24 +1,3 @@
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
-<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8"/>
-        <title>Play</title>
-        <meta name="description" content=""/>
-        <meta name="HandheldFriendly" content="True"/>
-        <meta name="MobileOptimized" content="320"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta http-equiv="cleartype" content="on"/>
-
-        <link rel="stylesheet" href="css/normalize.css"/>
-        <link rel="stylesheet" href="css/jquery-mobile.css"/>
-        <link rel="stylesheet" href="css/font-awesome.css"/>
-        <link rel="stylesheet" href="css/main.css"/>
-	
-	</head>
-    <body>
-    	
-	<!-- /#home-page -->
     <div id="about-page" data-role="page" style="background-image: url(img/stage.png);">
    		 <!-- Drums -->
     	<div id="about-content" data-role="content"> 
@@ -26,8 +5,8 @@
 			<table style="text-align: left; width: 428px; height: 363px;">
 			<tbody>
 				<tr>
-					<td style=" height: 86px;margin-top: -20px;">
-						<div style="text-align: left;margin-top: -20px;">
+					<td style=" height: 86px;">
+						<div style="text-align: left;margin-top: -1%;">
 							<img style="width: 100px; height: 60px;" alt="Tom 1" id ="crash-1" src="img/crash-1.png"/>
 							<img style="width: 100px; height: 80px;" alt="Tom 1" id ="tom-1" src="img/tom.png"/>
 							<img style="width: 100px; height: 80px;" alt="Tom 2" id ="tom-2" src="img/tom.png"/>
@@ -37,32 +16,118 @@
 				</tr>
 				
 				<tr>
-					<td colspan="3" rowspan="1"style="vertical-align: top; width: 108px; height: 310px;"/>
-						<div style="text-align: center;margin-top:-20px">
-							<img style="width: 130px; height: 80px;" alt="Hit Hat" id ="hit-hat"src="img/hit-hat.png"/>
-							<img style="width: 130px; height: 80px;" alt="Snare"   id ="snare"src="img/snare.png"/>
-							<img style="width: 130px; height: 80px;" alt="Ride"    id ="ride"src="img/ride.png"/>
+					<td style=" height: 86px;margin-top: -20px;">
+						<div style="text-align: left; margin-top: -30%;">
+							<img style="width: 130px; height: 80px;" alt="Hit Hat" id ="hit-hat" src="img/hit-hat.png"/>
+							<img style="width: 130px; height: 80px;" alt="Snare"   id ="snare" src="img/snare.png"/>
+							<img style="width: 130px; height: 80px;" alt="Ride"    id ="ride" src="img/ride.png"/>
 						</div>
 						
-						<div style="text-align: center">&nbsp;&nbsp;
-							<img style="width: 100px; height: 120px;" alt="Hit Hat Close"id ="hit-hat-close"src="img/hit-hat-close.png"/>
-							<img style="width: 160px; height: 120px;" alt="Base Drum"id ="base-drum" src="img/base-drum.png"/>
-							<img style="width: 130px; height: 120px;" alt="Tom Floor"id ="tom-floor" src="img/tom-floor.png"/>
+						<div style="text-align: left;">
+							<img style="width: 100px; height: 120px;" alt="Hit Hat Close" id ="hit-hat-close" src="img/hit-hat-close.png"/>
+							<img style="width: 160px; height: 120px;" alt="Base Drum" id ="base-drum" src="img/base-drum.png"/>
+							<img style="width: 130px; height: 120px;" alt="Tom Floor" id ="tom-floor" src="img/tom-floor.png"/>
 						</div>
 					</td>
 			</tr>
 		</tbody>
 		</table>
+		
 		<!-- /#Drums -->
 		<a data-role="button" onclick="iniciarSong();" data-transition="pop" href="index.html">Volver</a> 
     	</div>
+		<script>
+		$(document).ready(function(){
 		
-		<script src="js/Concurrent.Thread.js"></script>	  	
-		<script src="js/zepto.min.js"></script> 
-	  	<script src="js/sounds.js"></script>
+		var accion= $('#hit-hat');
+		accion.on('click',function (){
+			Concurrent.Thread.create(play, 0);	
+			});
+		var accion= $('#snare');
+		accion.on('click',function (){
+			Concurrent.Thread.create(play, 1);	
+			});
+		var accion= $('#ride');
+		accion.on('click',function (){
+			Concurrent.Thread.create(play, 2);	
+			});
+		var accion= $('#hit-hat-close');
+		accion.on('click',function (){
+			Concurrent.Thread.create(play, 3);	
+			});
+		var accion= $('#base-drum');
+		accion.on('click',function (){
+			Concurrent.Thread.create(play, 4);	
+			});
+		var accion= $('#tom-floor');
+		accion.on('click',function (){
+			Concurrent.Thread.create(play, 5);	
+			});
+		var accion= $('#tom-1');
+		accion.on('click',function (){
+			Concurrent.Thread.create(play, 6);	
+			});
+		var accion= $('#tom-2');
+		accion.on('click',function (){
+			Concurrent.Thread.create(play, 7);	
+			});
+		var accion= $('#crash-1');
+		accion.on('click',function (){
+			Concurrent.Thread.create(play, 8);	
+			});
+		var accion= $('#crash-2');
+		accion.on('click',function (){
+			Concurrent.Thread.create(play, 9);	
+			});
+		
+	});
 
+	function play ( i ){
+	var aux=i;
+	while (i>=aux) {
+			recargar(aux);
+			audio[i].play();
+			aux++;
+        }
+	}
+
+	function recargar(i){
+	switch(i){
+	case 0:
+		audio[0]=new Audio('sounds/hit-hat.mp3');
+		break;
+	case 1:
+		audio[1]=new Audio('sounds/snare.mp3');
+		break;
+	case 2:
+		audio[2]=new Audio('sounds/ride.mp3');
+		break;
+	case 3:
+		audio[3]=new Audio('sounds/hit-hat-close.mp3');
+		break;
+	case 4:
+		audio[4]=new Audio('sounds/base-drum.mp3');
+		break;
+	case 5:
+		audio[5]=new Audio('sounds/tom-floor.mp3');
+		break;
+	case 6:
+		audio[6]=new Audio('sounds/tom-1.mp3');
+		break;
+	case 7:
+		audio[7]=new Audio('sounds/tom-2.mp3');
+		break;
+	case 8:
+		audio[8]=new Audio('sounds/crash-1.mp3');
+		break;
+	case 9:
+		audio[9]=new Audio('sounds/crash-2.mp3');
+		break;
+
+	}
+	}
+
+		</script> 
 	</div>
 	<!-- /#home-page -->
 
-    </body>
-</html>
