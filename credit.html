@@ -1,15 +1,19 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+<body>
 	<!-- /#home-page -->
     <div id="about-page" data-role="page">
 		<div class="container" >
 		<section id="content">
 			<form action="">
-				<h1>Creditos</h1>
+				<h1 data-l10n-id="credit">Creditos</h1>
 				<div>
-					<p style="text-align: left;">Drumstart es una divertida aplicacion para dispositivos Firefox Os.</p><br></br>
-					<p style="text-align: left;">Este aplicativo es un simulador basico de bateria ,donde los usuarios experimenta un escenario real.</p><br></br>
-					<h4 style="text-align: left;">Desarrollado por </h4><br></br>
+					<p style="text-align: left;" data-l10n-id="des-1">Drumstart es una divertida aplicacion para dispositivos Firefox Os.</p><br></br>
+					<p style="text-align: left;" data-l10n-id="des-2">Este aplicativo es un simulador basico de bateria ,donde los usuarios experimenta un escenario real.</p><br></br>
+					<h4 style="text-align: left;" data-l10n-id="dev">Desarrollado por </h4><br></br>
 					<h3 style="text-align: left;color: rgb(0, 74, 128);">Giovanny Cifuentes</h3><br></br>
-					<h4 style="text-align: left;">Contactame</h4><br></br>
+					<h4 style="text-align: left;" data-l10n-id="con">Contactame</h4><br></br>
 					<p style="text-align: left;">Git Hub</p><p style="text-align: left;color: rgb(0, 74, 128);">https://github.com/gianci15</p><br></br>
 					<p style="text-align: left;">Twitter</p><p style="text-align: left;color: rgb(0, 74, 128);">@gianci15</p><br></br>
 				</div>
@@ -21,8 +25,13 @@
 		</section><!-- content -->
 		</div><!-- container -->
 	
-		<a data-role="button" onclick="iniciarSong();" data-transition="pop" href="index.html">Volver</a> 
+		<a data-role="button" onclick="iniciarSong();" data-transition="pop" href="index.html" data-l10n-id="back">Volver</a> 
+		
+		<!-- Traductor -->
+		<link rel="resource" type="application/l10n" href="locales/locales.ini" />
+		<script type="application/javascript" src="js/l10n-1.js"></script>
 
 	</div>
 	<!-- /#home-page -->
-
+</body>
+</html>

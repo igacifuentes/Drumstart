@@ -1,4 +1,8 @@
-    <div id="about-page" data-role="page" style="background-image: url(img/stage.png);">
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+<body>   
+ <div id="about-page" data-role="page" style="background-image: url(img/stage.png);">
    		 <!-- Drums -->
     	<div id="about-content" data-role="content"> 
 	
@@ -34,7 +38,7 @@
 		</table>
 		
 		<!-- /#Drums -->
-		<a data-role="button" onclick="iniciarSong();" data-transition="pop" href="index.html">Volver</a> 
+		<a data-role="button" onclick="iniciarSong();" data-transition="pop" href="index.html" data-l10n-id="back">Volver</a> 
     	</div>
 		<script>
 		$(document).ready(function(){
@@ -128,6 +132,14 @@
 	}
 
 		</script> 
+
+		<!-- Traductor -->
+		<link rel="resource" type="application/l10n" href="locales/locales.ini" />
+		<script type="application/javascript" src="js/l10n.js"></script>
+		
+
 	</div>
 	<!-- /#home-page -->
+</body>
+</html>
 

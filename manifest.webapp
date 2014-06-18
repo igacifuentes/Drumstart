@@ -15,9 +15,22 @@
     "name": "Giovanny Cifuentes",
     "url": "http://www.giovannycifuentes.hol.es"
   },
-  "default_locale": "es",
   "orientation": [
     "landscape"
   ],
-  "permissions": {}
+  "permissions": {},
+	  "locales": {
+    "en-US": {
+      "name": "Drumstart",
+      "description": "Drums Simulator for Firefox Os"
+    },
+    "es": {
+      "name": "Drumstart",
+      "description": "Simulador de bateria  para Firefox Os"
+    },
+    "pt": {
+      "name": "Drumstart",
+      "description": "Bateria Simulator para Firefox Os"
+    }
+  }
 }

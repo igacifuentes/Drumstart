@@ -46,6 +46,11 @@
 	<script type="text/javascript" charset="UTF-8" src="js/mobileinit.js"></script>
 	<script type="text/javascript" charset="UTF-8" src="js/ios-orientationchange-fix.min.js"></script>
 	<script type="text/javascript" charset="UTF-8" src="js/jquery.mobile-1.4.0.js"></script>
+	
+	<!-- Traductor -->
+	<script type="application/javascript" src="js/l10n.js"></script>
+	<link rel="resource" type="application/l10n" href="locales/locales.ini" />
+
 	<style>
 		@font-face {
 			font-family: "Rocky";
@@ -71,7 +76,7 @@
 		<div style="text-align: right; padding-top: 20%; padding-right: 5%;">
 				<!--PLay-->
       			<a data-transition="flip" href="play.html" onclick="detenerSong();Concurrent.Thread.create(playInit, 0);" id="title">
-					<span id="animationSandbox1" style="display: block;">Tocar</span>
+					<span id="animationSandbox1" style="display: block;" data-l10n-id="play">Tocar</span>
 				</a><br>
 				<!--Transiton: slide,slideup,slidedown,pop,fade,flip-->
 				<!--/#PLay-->
@@ -84,7 +89,7 @@
 
 				<!--Acerca-->
       			<a data-transition="flip" href="credit.html" onclick="detenerSong();Concurrent.Thread.create(playInit, 1);" id="title">
-					<span id="animationSandbox3" style="display: block;">Creditos</span>
+					<span id="animationSandbox3" style="display: block;" data-l10n-id="credit">Creditos</span>
 				</a><br>
 				<!--/#Acerca-->			
 
@@ -99,7 +104,8 @@
 				<script type="text/javascript" charset="UTF-8" src="js/sounds.js"></script> 
 				<script>
 				iniciarSong();
-				</script>		
+				</script>	
+
 		</div>
 		<!-- /#home-page -->
 	</div>
