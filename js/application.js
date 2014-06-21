@@ -35,7 +35,6 @@
 	function detenerSong(){
 			
 		aud.pause();
-		aud.currentTime = 0;
 	}
 	
 	function playInit( i ){

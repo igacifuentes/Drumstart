@@ -23,12 +23,7 @@
 <head>
 	<title>Drumstart</title>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
+	<meta http-equiv="Content-Type" content="application/x-web-app-manifest+json; charset=UTF-8">
 
 	<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
 	<meta http-equiv="cleartype" content="on">
@@ -60,19 +55,20 @@
 		}
 	
 		#title{
-		font-family: Rocky;
-		line-height: 15px;
-		font-size: 25px;
-		text-decoration:none ;
-		color:white;
-		text-shadow:4px 4px #000;
-	}
+			font-family: Rocky;
+			line-height: 15px;
+			font-size: 25px;
+			text-decoration:none ;
+			color:white;
+			text-shadow:4px 4px #000;
+		}
 	</style>
 
 </head>
 <body>
 	<!-- home-page -->
-	<div data-role="page" style="background-image: url(img/background.png);">
+	<div data-role="page" style="background-image: url(img/background.png);-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;
+    background-size: cover;">
 		<div style="text-align: right; padding-top: 20%; padding-right: 5%;">
 				<!--PLay-->
       			<a data-transition="flip" href="play.html" onclick="detenerSong();Concurrent.Thread.create(playInit, 0);" id="title">
@@ -80,12 +76,6 @@
 				</a><br>
 				<!--Transiton: slide,slideup,slidedown,pop,fade,flip-->
 				<!--/#PLay-->
-
-				<!--Ejemplo--
-      			<a data-transition="flip" href="ejemplo.html" onclick="detenerSong();Concurrent.Thread.create(play, 1);" id="title">
-					<span id="animationSandbox2" style="display: block;">Ejemplo</span>
-				</a><br>
-				<!--/#Ejemplo-->
 
 				<!--Acerca-->
       			<a data-transition="flip" href="credit.html" onclick="detenerSong();Concurrent.Thread.create(playInit, 1);" id="title">
