@@ -2,36 +2,40 @@
 <!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
 <body>   
- <div id="about-page" data-role="page" style="background-image: url(img/stage.png);webkit-background-size: cover;-moz-background-size: cover;-o-background-size:cover;
+ <div id="about-page" data-role="page" style="background-image: url(img/stage.svg);webkit-background-size: cover;-moz-background-size: cover;-o-background-size:cover;
     background-size: cover;">
+			<div data-role="collapsible" data-theme="b" style="text-align: left;margin-top:-2%;">
+    			<h4>Opciones</h4>
+    					<a class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-back ui-btn-icon-left ui-btn-b" data-role="button" onclick="iniciarSong();" data-transition="pop" href="index.html" data-l10n-id="back" data-theme="b" >Volver</a> 
+			</div>
    		 <!-- Drums -->
-    	<div id="about-content" data-role="content"> 
+    	<div id="about-content" data-role="content"style="overflow-y: hidden;overflow-x: hidden;" > 
 	
-			<table style="text-align: left; width: 100%; height: 120%">
+			<table style="text-align: left; width: 100%;">
 			<tbody>
 				<tr>
 					<td style=" height: 86px;">
-						<div style="text-align: left;margin-top: -2%;">
-							<img style="width: 18%; height: 10%;" alt="Tom 1" id ="crash-1" src="img/crash-1.png"/>
-							<img style="width: 24%; height: 10%;" alt="Tom 1" id ="tom-1" src="img/tom.png"/>
-							<img style="width: 24%; height: 10%;" alt="Tom 2" id ="tom-2" src="img/tom.png"/>
-							<img style="width: 24%; height: 6%;" alt="Tom 1" id ="crash-2" src="img/crash-2.png"/>
+						<div style="text-align: left;margin-top: -2%;margin-left: 4%;">
+							<img style="width: 17%; height: 10%;" alt="Tom 1" id ="crash-1" src="img/crash-1.png"/>
+							<img style="width: 20%; height: 10%;" alt="Tom 1" id ="tom-1" src="img/tom.png"/>
+							<img style="width: 20%; height: 10%;" alt="Tom 2" id ="tom-2" src="img/tom.png"/>
+							<img style="width: 21%; height: 6%;" alt="Tom 1" id ="crash-2" src="img/crash-2.png"/>
 						</div>
 					</td>
 				</tr>
 				
 				<tr>
 					<td style=" height: 86px;">
-						<div style="text-align: left;margin-top: -3%;margin-left: 3%;">
-							<img style="width: 28%; height: 15%;" alt="Hit Hat" id ="hit-hat" src="img/hit-hat.png"/>
-							<img style="width: 28%; height: 15%;" alt="Snare"   id ="snare" src="img/snare.png"/>
-							<img style="width: 32%; height: 35%;" alt="Ride"    id ="ride" src="img/ride.png"/>
+						<div style="text-align: left;margin-top: -3%;margin-left: 7%;">
+							<img style="width: 26%; height: 15%;" alt="Hit Hat" id ="hit-hat" src="img/hit-hat.png"/>
+							<img style="width: 26%; height: 15%;" alt="Snare"   id ="snare" src="img/snare.png"/>
+							<img style="width: 30%; height: 35%;" alt="Ride"    id ="ride" src="img/ride.png"/>
 						</div>
 						
-						<div style="text-align: left;margin-top: -5%;margin-left: 11%;">
-							<img style="width: 18%; height: 12%;" alt="Hit Hat Close" id ="hit-hat-close" src="img/hit-hat-close.png"/>
-							<img style="width: 36%; height: 25%;" alt="Base Drum" id ="base-drum" src="img/base-drum.png"/>
-							<img style="width: 24%; height: 12%" alt="Tom Floor" id ="tom-floor" src="img/tom-floor.png"/>
+						<div style="text-align: left;margin-top: -5%;margin-left: 15%;margin-bottom:-4%">
+							<img style="width: 16%; height: 12%;" alt="Hit Hat Close" id ="hit-hat-close" src="img/hit-hat-close.png"/>
+							<img style="width: 34%; height: 20%;" alt="Base Drum" id ="base-drum" src="img/base-drum.png"/>
+							<img style="width: 22%; height: 12%" alt="Tom Floor" id ="tom-floor" src="img/tom-floor.png"/>
 						</div>
 					</td>
 			</tr>
@@ -39,7 +43,6 @@
 		</table>
 		
 		<!-- /#Drums -->
-		<a data-role="button" onclick="iniciarSong();" data-transition="pop" href="index.html" data-l10n-id="back">Volver</a> 
     	</div>
 		<script>
 		$(document).ready(function(){

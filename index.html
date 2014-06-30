@@ -26,7 +26,11 @@
 	<meta http-equiv="Content-Type" content="application/x-web-app-manifest+json; charset=UTF-8">
 
 	<!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
-	<meta http-equiv="cleartype" content="on">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
 
 	<!-- jQuery Mobile CSS bits -->
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.min.css" />
@@ -42,6 +46,23 @@
 	<script type="text/javascript" charset="UTF-8" src="js/ios-orientationchange-fix.min.js"></script>
 	<script type="text/javascript" charset="UTF-8" src="js/jquery.mobile-1.4.0.js"></script>
 	
+	<!-- Startup Images for iDevices -->
+	<script>(function(){var a;if(navigator.platform==="iPad"){a=window.orientation!==90||window.orientation===-90?"images/startup-tablet-landscape.png":"images/startup-tablet-portrait.png"}else{a=window.devicePixelRatio===2?"images/startup-retina.png":"images/startup.png"}document.write('<link rel="apple-touch-startup-image" href="'+a+'"/>')})()</script>
+	<!-- The script prevents links from opening in mobile safari. https://gist.github.com/1042026 -->
+	<script>
+	(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test			(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})	(document,window.navigator,"standalone")
+	</script>
+	<script>
+		$( document ).on( "pagecreate", function() {
+			$( "body > [data-role='panel']" ).panel();
+			$( "body > [data-role='panel'] [data-role='listview']" ).listview();
+		});
+		$( document ).one( "pageshow", function() {
+			$( "body > [data-role='header']" ).toolbar();
+			$( "body > [data-role='header'] [data-role='navbar']" ).navbar();
+		});
+	</script>
+	
 	<!-- Traductor -->
 	<script type="application/javascript" src="js/l10n.js"></script>
 	<link rel="resource" type="application/l10n" href="locales/locales.ini" />
@@ -54,10 +75,25 @@
 			src: url("fonts/Rocky.otf");
 		}
 	
+		@font-face {
+			font-family: "RudeMetal";
+			font-style: normal;
+			font-weight: normal;
+			src: url("fonts/RudeMetal.ttf");
+		}
+	
 		#title{
+			font-family: RudeMetal;
+			line-height: 40%;
+			font-size: 3.5em;
+			text-decoration:none ;
+			color:white;
+			text-shadow:8px 8px #000;
+		}
+		#menuPrincipal{
 			font-family: Rocky;
-			line-height: 15px;
-			font-size: 25px;
+			line-height: 50%;
+			font-size: 2em;
 			text-decoration:none ;
 			color:white;
 			text-shadow:4px 4px #000;
@@ -67,25 +103,31 @@
 </head>
 <body>
 	<!-- home-page -->
-	<div data-role="page" style="background-image: url(img/background.png);-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;
+	<div data-role="page" style="background-image: url(img/background.svg);-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;
     background-size: cover;">
-		<div style="text-align: right; padding-top: 20%; padding-right: 5%;">
+     			<a href="#" id="title">
+					<br></br>
+					<p style="text-align: right; padding-right: 5%;">
+					DRUMSTART
+					</p> 
+				</a><br></br>
+		<div style="text-align: right; padding-right: 5%;">
 				<!--PLay-->
-      			<a data-transition="flip" href="play.html" onclick="detenerSong();Concurrent.Thread.create(playInit, 0);" id="title">
+      			<a data-transition="flip" href="play.html" onclick="detenerSong();Concurrent.Thread.create(playInit, 0);" id="menuPrincipal">
 					<span id="animationSandbox1" style="display: block;" data-l10n-id="play">Tocar</span>
 				</a><br>
 				<!--Transiton: slide,slideup,slidedown,pop,fade,flip-->
 				<!--/#PLay-->
 
 				<!--Acerca-->
-      			<a data-transition="flip" href="credit.html" onclick="detenerSong();Concurrent.Thread.create(playInit, 1);" id="title">
+      			<a data-transition="flip" href="credit.html" onclick="detenerSong();Concurrent.Thread.create(playInit, 1);" id="menuPrincipal">
 					<span id="animationSandbox3" style="display: block;" data-l10n-id="credit">Creditos</span>
 				</a><br>
 				<!--/#Acerca-->			
 
 			    <!-- footer -->
 				<div id="footer">
-    				<h4 style="font-size: 0.8em;">Copyright © 2014 <br>Gianci Technologys.<br>Drumstart V 1.0.</h4>
+    				<h4 style="font-size: 0.8em;">Copyright © 2014 <br>Gianci Technologys.<br>Drumstart V 1.1</h4>
 	   			</div>
 				<!-- /#footer -->	
 				<script type="text/javascript" charset="UTF-8" src="js/Concurrent.Thread.js"></script>	  	
