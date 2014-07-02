@@ -101,7 +101,7 @@
 	</style>
 
 </head>
-<body>
+<body style="overflow-y: scroll;overflow-x: hidden;">
 	<!-- home-page -->
 	<div data-role="page" style="background-image: url(img/background.svg);-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;
     background-size: cover;">
@@ -123,17 +123,16 @@
       			<a data-transition="flip" href="credit.html" onclick="detenerSong();Concurrent.Thread.create(playInit, 1);" id="menuPrincipal">
 					<span id="animationSandbox3" style="display: block;" data-l10n-id="credit">Creditos</span>
 				</a><br>
-				<!--/#Acerca-->			
+				<!--/#Acerca-->	
 
 			    <!-- footer -->
 				<div id="footer">
-    				<h4 style="font-size: 0.8em;">Copyright © 2014 <br>Gianci Technologys.<br>Drumstart V 1.1</h4>
+    				<h4 style="font-size: 0.8em;">Copyright © 2014 <br>Gianci Technologys.<br>Drumstart V 1.2</h4>
 	   			</div>
 				<!-- /#footer -->	
 				<script type="text/javascript" charset="UTF-8" src="js/Concurrent.Thread.js"></script>	  	
 				<script type="text/javascript" charset="UTF-8" src="js/zepto.min.js"></script> 
 	  			<script type="text/javascript" charset="UTF-8" src="js/application.js"></script>
-				<script type="text/javascript" charset="UTF-8" src="js/sounds.js"></script> 
 				<script>
 				iniciarSong();
 				</script>	

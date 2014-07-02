@@ -1,16 +1,4 @@
-	// custom code goes here
-	var aud=new Audio('sounds/bateria.mp3');
-	var audio=[];
-	audio[0]=new Audio('sounds/hit-hat.mp3');
-	audio[1]=new Audio('sounds/snare.mp3');
-	audio[2]=new Audio('sounds/ride.mp3');
-	audio[3]=new Audio('sounds/hit-hat-close.mp3');
-	audio[4]=new Audio('sounds/base-drum.mp3');
-	audio[5]=new Audio('sounds/tom-floor.mp3');
-	audio[6]=new Audio('sounds/tom-1.mp3');
-	audio[7]=new Audio('sounds/tom-2.mp3');
-	audio[8]=new Audio('sounds/crash-1.mp3');
-	audio[9]=new Audio('sounds/crash-2.mp3');
+
 	var aud=new Audio('sounds/bateria.mp3');
 
 	function iniciarSong(){

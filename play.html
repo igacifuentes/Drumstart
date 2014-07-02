@@ -2,140 +2,133 @@
 <!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
 <body>   
+<!--  Stage Color 
+	 Azul #031826
+	 verde #183825 
+	 Rojo #8F1725 
+	 negro #1E1E1E 
+	 Gris #414342
+-->
+
+<!-- Options -->
  <div id="about-page" data-role="page" style="background-image: url(img/stage.svg);webkit-background-size: cover;-moz-background-size: cover;-o-background-size:cover;
     background-size: cover;">
 			<div data-role="collapsible" data-theme="b" style="text-align: left;margin-top:-2%;">
-    			<h4>Opciones</h4>
-    					<a class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-back ui-btn-icon-left ui-btn-b" data-role="button" onclick="iniciarSong();" data-transition="pop" href="index.html" data-l10n-id="back" data-theme="b" >Volver</a> 
-			</div>
+    			<h4><span data-l10n-id="options">Opciones</span></h4>
+
+			<!-- Stage -->
+<a href="#popupMenu" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-location  ui-btn-icon-left ui-btn-b" data-l10n-id="stage" >Escenario</a>
+		<div data-role="popup" id="popupMenu" data-theme="b">
+        	<ul data-role="listview" data-inset="true" style="min-width:210px;">
+            	<li data-role="list-divider" data-l10n-id="chooseStage">Elegir Escenario</li>
+            		<li><a href="#" onclick="changeColorStage('#031826');" data-l10n-id="blue">Azul</a></li>
+            		<li><a href="#" onclick="changeColorStage('#183825');" data-l10n-id="green">Verde</a></li>
+            		<li><a href="#" onclick="changeColorStage('#8F1725');" data-l10n-id="red">Rojo</a></li>
+					<li><a href="#" onclick="changeColorStage('#1E1E1E');" data-l10n-id="black">Negro</a></li>
+					<li><a href="#" onclick="changeColorStage('#414342');" data-l10n-id="gray">Gris</a></li>
+        	</ul>
+		</div>
+		<!-- /#Stage -->
+
+			<!-- Back -->
+    		<a class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-back ui-btn-icon-left ui-btn-b" data-role="button" onclick="iniciarSong();" data-transition="pop" href="index.html" data-l10n-id="back" data-theme="b" >Volver</a> 
+			<!-- /#Back -->
+</div>
+<!-- /#Options -->		
+
    		 <!-- Drums -->
-    	<div id="about-content" data-role="content"style="overflow-y: hidden;overflow-x: hidden;" > 
+    	<div id="about-content" data-role="content" style="overflow-y: hidden;overflow-x: hidden;" > 
 	
 			<table style="text-align: left; width: 100%;">
-			<tbody>
+			<tbody style="overflow-y: hidden;overflow-x: hidden;">
 				<tr>
 					<td style=" height: 86px;">
-						<div style="text-align: left;margin-top: -2%;margin-left: 4%;">
-							<img style="width: 17%; height: 10%;" alt="Tom 1" id ="crash-1" src="img/crash-1.png"/>
-							<img style="width: 20%; height: 10%;" alt="Tom 1" id ="tom-1" src="img/tom.png"/>
-							<img style="width: 20%; height: 10%;" alt="Tom 2" id ="tom-2" src="img/tom.png"/>
-							<img style="width: 21%; height: 6%;" alt="Tom 1" id ="crash-2" src="img/crash-2.png"/>
+						<div style="text-align: left;margin-top: -3%;margin-left: 11%;">
+							<img style="width: 19%; height: 10%;" alt="Tom 1" id ="crash-1" src="img/crash-1.png"/>
+							<img style="width: 22%; height: 10%;" alt="Tom 1" id ="tom-1" src="img/tom.png"/>
+							<img style="width: 22%; height: 10%;" alt="Tom 2" id ="tom-2" src="img/tom.png"/>
+							<img style="width: 23%; height: 6%;" alt="Tom 1" id ="crash-2" src="img/crash-2.png"/>
 						</div>
 					</td>
 				</tr>
 				
 				<tr>
 					<td style=" height: 86px;">
-						<div style="text-align: left;margin-top: -3%;margin-left: 7%;">
-							<img style="width: 26%; height: 15%;" alt="Hit Hat" id ="hit-hat" src="img/hit-hat.png"/>
-							<img style="width: 26%; height: 15%;" alt="Snare"   id ="snare" src="img/snare.png"/>
-							<img style="width: 30%; height: 35%;" alt="Ride"    id ="ride" src="img/ride.png"/>
+						<div style="text-align: left;margin-top: -6%;margin-left: 11%;">
+							<img style="width: 28%; height: 15%;" alt="Hit Hat" id ="hit-hat" src="img/hit-hat.png"/>
+							<img style="width: 28%; height: 15%;" alt="Snare"   id ="snare" src="img/snare.png"/>
+							<img style="width: 32%; height: 35%;" alt="Ride"    id ="ride" src="img/ride.png"/>
 						</div>
 						
-						<div style="text-align: left;margin-top: -5%;margin-left: 15%;margin-bottom:-4%">
-							<img style="width: 16%; height: 12%;" alt="Hit Hat Close" id ="hit-hat-close" src="img/hit-hat-close.png"/>
-							<img style="width: 34%; height: 20%;" alt="Base Drum" id ="base-drum" src="img/base-drum.png"/>
-							<img style="width: 22%; height: 12%" alt="Tom Floor" id ="tom-floor" src="img/tom-floor.png"/>
+						<div style="text-align: left;margin-top: -5%;margin-left: 19%;margin-bottom:-4%">
+							<img style="width: 18%; height: 12%;" alt="Hit Hat Close" id ="hit-hat-close" src="img/hit-hat-close.png"/>
+							<img style="width: 36%; height: 20%;" alt="Base Drum" id ="base-drum" src="img/base-drum.png"/>
+							<img style="width: 24%; height: 12%" alt="Tom Floor" id ="tom-floor" src="img/tom-floor.png"/>
 						</div>
 					</td>
 			</tr>
 		</tbody>
 		</table>
-		
+
 		<!-- /#Drums -->
     	</div>
-		<script>
-		$(document).ready(function(){
+
+		<!-- Sounds -->
+  		<script>
+
+      		var el = document.getElementById("hit-hat");
+      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"hit-hat.mp3")}, false);
 		
-		var accion= $('#hit-hat');
-		accion.on('click',function (){
-			Concurrent.Thread.create(play, 0);	
-			});
-		var accion= $('#snare');
-		accion.on('click',function (){
-			Concurrent.Thread.create(play, 1);	
-			});
-		var accion= $('#ride');
-		accion.on('click',function (){
-			Concurrent.Thread.create(play, 2);	
-			});
-		var accion= $('#hit-hat-close');
-		accion.on('click',function (){
-			Concurrent.Thread.create(play, 3);	
-			});
-		var accion= $('#base-drum');
-		accion.on('click',function (){
-			Concurrent.Thread.create(play, 4);	
-			});
-		var accion= $('#tom-floor');
-		accion.on('click',function (){
-			Concurrent.Thread.create(play, 5);	
-			});
-		var accion= $('#tom-1');
-		accion.on('click',function (){
-			Concurrent.Thread.create(play, 6);	
-			});
-		var accion= $('#tom-2');
-		accion.on('click',function (){
-			Concurrent.Thread.create(play, 7);	
-			});
-		var accion= $('#crash-1');
-		accion.on('click',function (){
-			Concurrent.Thread.create(play, 8);	
-			});
-		var accion= $('#crash-2');
-		accion.on('click',function (){
-			Concurrent.Thread.create(play, 9);	
-			});
+	  		var el = document.getElementById("snare");
+      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"snare.mp3")}, false);
 		
-	});
+	  		var el = document.getElementById("ride");
+      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"ride.mp3")}, false);
+		
+	  		var el = document.getElementById("hit-hat-close");
+      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"hit-hat-close.mp3")}, false);
+	
+	  		var el = document.getElementById("base-drum");
+      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"base-drum.mp3")}, false);
+		
+	  		var el = document.getElementById("tom-floor");
+      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"tom-floor.mp3")}, false);
+		
+	  		var el = document.getElementById("tom-1");
+      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"tom-1.mp3")}, false);
+		
+	  		var el = document.getElementById("tom-2");
+      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"tom-2.mp3")}, false);
+		
+	  		var el = document.getElementById("crash-1");
+      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"crash-1.mp3")}, false);
+	
+	  		var el = document.getElementById("crash-2");
+      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"crash-2.mp3")}, false);
 
-	function play ( i ){
-	var aux=i;
-	while (i>=aux) {
-			recargar(aux);
-			audio[i].play();
-			aux++;
-        }
-	}
 
-	function recargar(i){
-	switch(i){
-	case 0:
-		audio[0]=new Audio('sounds/hit-hat.mp3');
-		break;
-	case 1:
-		audio[1]=new Audio('sounds/snare.mp3');
-		break;
-	case 2:
-		audio[2]=new Audio('sounds/ride.mp3');
-		break;
-	case 3:
-		audio[3]=new Audio('sounds/hit-hat-close.mp3');
-		break;
-	case 4:
-		audio[4]=new Audio('sounds/base-drum.mp3');
-		break;
-	case 5:
-		audio[5]=new Audio('sounds/tom-floor.mp3');
-		break;
-	case 6:
-		audio[6]=new Audio('sounds/tom-1.mp3');
-		break;
-	case 7:
-		audio[7]=new Audio('sounds/tom-2.mp3');
-		break;
-	case 8:
-		audio[8]=new Audio('sounds/crash-1.mp3');
-		break;
-	case 9:
-		audio[9]=new Audio('sounds/crash-2.mp3');
-		break;
-
-	}
-	}
+			function play (nombre){
+				var audio = document.createElement("audio");
+				audio.removeAttribute("src");
+				audio.src = "sounds/"+nombre;
+    			audio.play();
+			}
 
 		</script> 
+		<!-- /#Sounds -->
+
+		<!-- Stage Color -->
+		<script> 
+			localStorage.stageColor=(localStorage.stageColor||"#031826");
+			document.getElementById('about-page').style.backgroundColor=localStorage.stageColor;
+
+			function changeColorStage(colorStage){
+			localStorage.stageColor=colorStage;
+			document.getElementById('about-page').style.backgroundColor=localStorage.stageColor;
+			}
+
+		</script> 
+		<!-- /#Stage Color -->
 
 		<!-- Traductor -->
 		<link rel="resource" type="application/l10n" href="locales/locales.ini" />
