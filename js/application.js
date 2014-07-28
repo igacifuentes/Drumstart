@@ -37,10 +37,10 @@
 	function recargarInit(i){
 		switch(i){
 		case 0:
-			aud[0]=new Audio('sounds/hit-hat.mp3');
+			aud[0]=new Audio('sounds/hit-hat.ogg');
 			break;
 		case 1:
-			aud[1]=new Audio('sounds/ride.mp3');
+			aud[1]=new Audio('sounds/ride.ogg');
 			break;
 		}
 	}

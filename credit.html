@@ -3,7 +3,7 @@
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
 <body>
 	<!-- /#home-page -->
-    <div id="about-page" data-role="page">
+    <div id="about-page" data-role="page" style="overflow-y: scroll;overflow-x: hidden;">
 		<div class="container" >
 		<section id="content">
 			<form action="">
@@ -30,6 +30,10 @@
 		<!-- Traductor -->
 		<link rel="resource" type="application/l10n" href="locales/locales.ini" />
 		<script type="application/javascript" src="js/l10n.js"></script>
+		
+		<script>
+			document.body.style.overflow='scroll';
+		</script>
 
 	</div>
 	<!-- /#home-page -->

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
 <!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
-<body>   
+<body style="overflow: hidden;">   
 <!--  Stage Color 
 	 Azul #031826
 	 verde #183825 
@@ -12,12 +12,12 @@
 
 <!-- Options -->
  <div id="about-page" data-role="page" style="background-image: url(img/stage.svg);webkit-background-size: cover;-moz-background-size: cover;-o-background-size:cover;
-    background-size: cover;">
-			<div data-role="collapsible" data-theme="b" style="text-align: left;margin-top:-2%;">
-    			<h4><span data-l10n-id="options">Opciones</span></h4>
+    background-size: cover;overflow: hidden;margin:0; padding:0; height:100%; width:100%;">
+			<div data-role="collapsible" data-theme="b" style="text-align: left;margin: -3% -1% -2% 0%;width: 100%;">
+    			<h4><span data-l10n-id="options" style="font-size: 12px;">Opciones</span></h4>
 
 			<!-- Stage -->
-<a href="#popupMenu" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-location  ui-btn-icon-left ui-btn-b" data-l10n-id="stage" >Escenario</a>
+<a href="#popupMenu" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-location  ui-btn-icon-left ui-btn-b" data-l10n-id="stage">Escenario</a>
 		<div data-role="popup" id="popupMenu" data-theme="b">
         	<ul data-role="listview" data-inset="true" style="min-width:210px;">
             	<li data-role="list-divider" data-l10n-id="chooseStage">Elegir Escenario</li>
@@ -35,85 +35,142 @@
 			<!-- /#Back -->
 </div>
 <!-- /#Options -->		
-
    		 <!-- Drums -->
-    	<div id="about-content" data-role="content" style="overflow-y: hidden;overflow-x: hidden;" > 
-	
-			<table style="text-align: left; width: 100%;">
-			<tbody style="overflow-y: hidden;overflow-x: hidden;">
-				<tr>
-					<td style=" height: 86px;">
-						<div style="text-align: left;margin-top: -3%;margin-left: 11%;">
-							<img style="width: 19%; height: 10%;" alt="Tom 1" id ="crash-1" src="img/crash-1.png"/>
-							<img style="width: 22%; height: 10%;" alt="Tom 1" id ="tom-1" src="img/tom.png"/>
-							<img style="width: 22%; height: 10%;" alt="Tom 2" id ="tom-2" src="img/tom.png"/>
-							<img style="width: 23%; height: 6%;" alt="Tom 1" id ="crash-2" src="img/crash-2.png"/>
+    	<div id="about-content" data-role="content" style="overflow: hidden;float:top;" > 
+
+						<div style="text-align: left;position: fixed; overflow: hidden;">
+							<img style="width: 19%; position: fixed; margin: 0%;" alt="Crash 1" id ="crash-1" src="img/crash-1.svg"/>
+							<img style="width: 18%; position: fixed; margin: 0% 20%;" alt="Tom 1" id ="tom-1" src="img/tom.svg"/>
+							<img style="width: 18%; position: fixed; margin: 0% 38%;" alt="Tom 2" id ="tom-2" src="img/tom.svg"/>
+							<img style="width: 18%; position: fixed; margin: 0% 56%;" alt="Tom 3" id ="tom-3" src="img/tom.svg"/>
+							<img style="width: 21%; position: fixed; margin: 0% 74%;" alt="Crash 2" id ="crash-2" src="img/crash-2.svg"/>
 						</div>
-					</td>
-				</tr>
-				
-				<tr>
-					<td style=" height: 86px;">
-						<div style="text-align: left;margin-top: -6%;margin-left: 11%;">
-							<img style="width: 28%; height: 15%;" alt="Hit Hat" id ="hit-hat" src="img/hit-hat.png"/>
-							<img style="width: 28%; height: 15%;" alt="Snare"   id ="snare" src="img/snare.png"/>
-							<img style="width: 32%; height: 35%;" alt="Ride"    id ="ride" src="img/ride.png"/>
+
+						<div style="text-align: left;margin-top: -1%;position: fixed; overflow: hidden;">
+							<img style="width: 15%; position: fixed; margin: 18% -2%;" alt="Splash"  id ="splash" src="img/crash-1.svg"/>
+							<img style="width: 20%; position: fixed; margin: 20% 14%; z-index: 100;" alt="Hit Hat" id ="hit-hat" src="img/hit-hat.svg"></img>
+							<img style="width: 20%; position: fixed; margin: 18% 38%; z-index: 100;" alt="Snare"   id ="snare" src="img/snare.svg"/>
+							<img style="width: 25%; position: fixed; margin: 18% 60%;" alt="Ride"    id ="ride" src="img/ride.svg"/>
+							<img style="width: 10%; position: fixed; margin: 23% 84%;" alt="Timbale" id ="timbale" src="img/timbale.svg"/>
 						</div>
 						
-						<div style="text-align: left;margin-top: -5%;margin-left: 19%;margin-bottom:-4%">
-							<img style="width: 18%; height: 12%;" alt="Hit Hat Close" id ="hit-hat-close" src="img/hit-hat-close.png"/>
-							<img style="width: 36%; height: 20%;" alt="Base Drum" id ="base-drum" src="img/base-drum.png"/>
-							<img style="width: 24%; height: 12%" alt="Tom Floor" id ="tom-floor" src="img/tom-floor.png"/>
-						</div>
-					</td>
-			</tr>
-		</tbody>
-		</table>
+						<div style="text-align: left;margin-bottom: -1%;margin-top: 0%; position: fixed; overflow: hidden;">
+							<img style="width: 10%; position: fixed; margin: 42% 0%;" alt="Tambourine" id ="tambourine" src="img/tambourine.svg"/>
+							<img style="width: 10%; position: fixed; margin: 29% 0%;" alt="Stick" id ="stick" src="img/stick.svg"/>
+							<img style="width: 16%; position: fixed; margin: 28% 14%;" alt="Hit Hat Close" id ="hit-hat-close" src="img/hit-hat-close.svg"/>
+							<img style="width: 30%; position: fixed; margin: 26% 33%;" alt="Base Drum" id ="base-drum" src="img/base-drum.svg"/>
+							<img style="width: 20%; position: fixed; margin: 29% 62%;" alt="Tom Floor" id ="tom-floor" src="img/tom-floor.svg"/>
+							<img style="width: 14%; position: fixed; margin: 30% 82%;" alt="Bell" id ="bell" src="img/bell.svg"/>
+							<img style="width: 10%; position: fixed; margin: 44% 82%;" alt="Triangle" id ="triangle" src="img/triangle.svg"/>
+							
+						</div> 
 
 		<!-- /#Drums -->
     	</div>
 
 		<!-- Sounds -->
-  		<script>
+  		<script language="javascript">
+
+		function cambiarSizeCrashs(nombre){
+			document.getElementById(nombre).className = '';
+
+		}
 
       		var el = document.getElementById("hit-hat");
-      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"hit-hat.mp3")}, false);
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("hit-hat");
+
+			}, false);
 		
 	  		var el = document.getElementById("snare");
-      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"snare.mp3")}, false);
-		
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("snare");
+			}, false);
+
 	  		var el = document.getElementById("ride");
-      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"ride.mp3")}, false);
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("ride");
+			}, false);
 		
 	  		var el = document.getElementById("hit-hat-close");
-      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"hit-hat-close.mp3")}, false);
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("hit-hat-close");}, 
+			false);
 	
 	  		var el = document.getElementById("base-drum");
-      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"base-drum.mp3")}, false);
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("base-drum");
+			}, false);
 		
 	  		var el = document.getElementById("tom-floor");
-      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"tom-floor.mp3")}, false);
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("tom-floor");
+			}, false);
 		
 	  		var el = document.getElementById("tom-1");
-      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"tom-1.mp3")}, false);
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("tom-1");
+			}, false);
 		
 	  		var el = document.getElementById("tom-2");
-      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"tom-2.mp3")}, false);
-		
-	  		var el = document.getElementById("crash-1");
-      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"crash-1.mp3")}, false);
-	
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("tom-2");
+			}, false);
+			
+			var el = document.getElementById("tom-3");
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("tom-3");
+
+			}, false);
 	  		var el = document.getElementById("crash-2");
-      		el.addEventListener("touchstart",function(){Concurrent.Thread.create(play,"crash-2.mp3")}, false);
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("crash-2");
+			}, false);
+
+	  		var el = document.getElementById("crash-1");
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("crash-1");
+			}, false);
+	
+	  		var el = document.getElementById("splash");
+      		el.addEventListener("touchstart",function(){
+				worker.postMessage("splash");
+			}, false);
+		
+			var el = document.getElementById("timbale");
+			el.addEventListener("touchstart",function(){
+				worker.postMessage("timbale");
+			}, false);
+
+			var el = document.getElementById("tambourine");
+			el.addEventListener("touchstart",function(){
+				worker.postMessage("tambourine");
+			}, false);
+
+			var el = document.getElementById("bell");
+			el.addEventListener("touchstart",function(){
+				worker.postMessage("bell");
+			}, false);
+
+			var el = document.getElementById("triangle");
+			el.addEventListener("touchstart",function(){
+				worker.postMessage("triangle");
+			}, false);
+
+			var el = document.getElementById("stick");
+			el.addEventListener("touchstart",function(){
+				worker.postMessage("stick");
+			}, false);
 
 
-			function play (nombre){
+            var worker = new Worker("js/sound.js");
+			worker.onmessage = function(event) {
 				var audio = document.createElement("audio");
+				audio = document.createElement("audio");
 				audio.removeAttribute("src");
-				audio.src = "sounds/"+nombre;
+				audio.src = "sounds/"+event.data+".ogg";
     			audio.play();
-			}
-
+             };
 		</script> 
 		<!-- /#Sounds -->
 
@@ -132,7 +189,7 @@
 
 		<!-- Traductor -->
 		<link rel="resource" type="application/l10n" href="locales/locales.ini" />
-		<script type="application/javascript" src="js/l10n.js"></script>
+		<script type="application/javascript" src="l10n.js"></script>
 		
 
 	</div>

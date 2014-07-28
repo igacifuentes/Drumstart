@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="200" height="468" id="svg2">
+  <defs id="defs4">
+    <linearGradient id="linearGradient3252">
+      <stop style="stop-color:#7f319a;stop-opacity:1" offset="0" id="stop3254"/>
+      <stop style="stop-color:#2537bc;stop-opacity:1" offset="1" id="stop3256"/>
+    </linearGradient>
+    <linearGradient x1="8.5" y1="346.70181" x2="8.5" y2="451.94955" id="linearGradient3258" xlink:href="#linearGradient3252" gradientUnits="userSpaceOnUse" gradientTransform="translate(71.428574,126.93361)"/>
+  </defs>
+  <g transform="translate(-71.428574,-126.93361)" id="layer1">
+    <path d="M 17.198098 20.343639 A 7.5873961 17.198097 0 1 1  2.0233054,20.343639 A 7.5873961 17.198097 0 1 1  17.198098 20.343639 z" transform="matrix(1.0426197,0,0,1.0426197,69.858979,125.00746)" style="opacity:1;fill:#820056;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="path3250"/>
+    <path d="M 4.59375,34 L 0,135 L 17,135 L 12.40625,34 L 4.59375,34 z " transform="translate(71.428574,126.93361)" style="opacity:1;fill:#347569;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="path3242"/>
+    <path d="M 71.428574,261.93361 L 71.428574,587.33986 C 71.428574,591.54328 74.81891,594.93361 79.02232,594.93361 L 80.83482,594.93361 C 85.03824,594.93361 88.42857,591.54328 88.42857,587.33986 L 88.42857,261.93361 L 71.428574,261.93361 z " style="opacity:1;fill:url(#linearGradient3258);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect2266"/>
+    <text x="101.70197" y="593.80579" style="font-size:37.09226608px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#2536bb;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans" id="text3260" xml:space="preserve"><tspan x="101.70197" y="593.80579" id="tspan3262">Butt</tspan></text>
+    <text x="102.95166" y="339.96707" style="font-size:37.09226608px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#7f319a;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans" id="text3264" xml:space="preserve"><tspan x="102.95166" y="339.96707" id="tspan3266">Shaft</tspan></text>
+    <text x="104.20135" y="224.04918" style="font-size:37.09226608px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#347569;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans" id="text3268" xml:space="preserve"><tspan x="104.20135" y="224.04918" id="tspan3270">Shoulder</tspan></text>
+    <text x="105.45104" y="156.96707" style="font-size:37.09226608px;font-style:normal;font-weight:normal;text-align:start;text-anchor:start;fill:#820056;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans" id="text3272" xml:space="preserve"><tspan x="105.45104" y="156.96707" id="tspan3274">Tip</tspan></text>
+  </g>
+</svg>

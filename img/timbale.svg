@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="70"
+   height="50"
+   id="svg4149"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="timbsl.svg">
+  <defs
+     id="defs4151">
+    <clipPath
+       id="SVGID_94_">
+      <use
+         xlink:href="#SVGID_31_"
+         overflow="visible"
+         id="use512"
+         style="overflow:visible"
+         x="0"
+         y="0"
+         width="570"
+         height="414" />
+    </clipPath>
+    <linearGradient
+       id="SVGID_93_"
+       gradientUnits="userSpaceOnUse"
+       x1="0"
+       y1="413.5"
+       x2="1"
+       y2="413.5"
+       gradientTransform="matrix(-1.9e-6,-43.7146,-43.7146,1.9e-6,18530.787,369.4367)">
+      <stop
+         offset="0"
+         style="stop-color:#C0151B"
+         id="stop496" />
+      <stop
+         offset="0.544"
+         style="stop-color:#730000"
+         id="stop498" />
+      <stop
+         offset="0.9884"
+         style="stop-color:#C8161D"
+         id="stop500" />
+      <stop
+         offset="1"
+         style="stop-color:#C8161D"
+         id="stop502" />
+    </linearGradient>
+    <clipPath
+       id="SVGID_92_">
+      <use
+         xlink:href="#SVGID_32_"
+         overflow="visible"
+         id="use493"
+         style="overflow:visible"
+         x="0"
+         y="0"
+         width="570"
+         height="414" />
+    </clipPath>
+    <linearGradient
+       y2="413.5"
+       x2="1"
+       y1="413.5"
+       x1="0"
+       gradientTransform="matrix(-1.9e-6,-43.7146,-43.7146,1.9e-6,18530.787,369.4367)"
+       gradientUnits="userSpaceOnUse"
+       id="linearGradient4202"
+       xlink:href="#SVGID_93_"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="88.153429"
+     inkscape:cy="63.57121"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="718"
+     inkscape:window-x="0"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4154">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1002.362)">
+    <g
+       id="g487"
+       transform="matrix(1,0,0,1.0699826,-419.5916,660.98688)">
+      <defs
+         id="defs489">
+        <polygon
+           id="SVGID_32_"
+           points="488.068,354.877 488.068,331.199 421.588,321.181 421.588,363.985 " />
+      </defs>
+      <clipPath
+         id="clipPath4179">
+        <use
+           xlink:href="#SVGID_32_"
+           overflow="visible"
+           id="use4181"
+           style="overflow:visible"
+           x="0"
+           y="0"
+           width="570"
+           height="414" />
+      </clipPath>
+      <linearGradient
+         id="linearGradient4183"
+         gradientUnits="userSpaceOnUse"
+         x1="0"
+         y1="413.5"
+         x2="1"
+         y2="413.5"
+         gradientTransform="matrix(-1.9e-6,-43.7146,-43.7146,1.9e-6,18530.787,369.4367)">
+        <stop
+           offset="0"
+           style="stop-color:#C0151B"
+           id="stop4185" />
+        <stop
+           offset="0.544"
+           style="stop-color:#730000"
+           id="stop4187" />
+        <stop
+           offset="0.9884"
+           style="stop-color:#C8161D"
+           id="stop4189" />
+        <stop
+           offset="1"
+           style="stop-color:#C8161D"
+           id="stop4191" />
+      </linearGradient>
+      <rect
+         x="421.58801"
+         y="321.181"
+         clip-path="url(#SVGID_92_)"
+         width="66.480003"
+         height="42.805"
+         id="rect504"
+         style="fill:url(#linearGradient4202)" />
+    </g>
+    <g
+       id="g506"
+       transform="matrix(1,0,0,1.0699826,-419.5916,660.98688)">
+      <defs
+         id="defs508">
+        <rect
+           id="SVGID_31_"
+           width="569.5"
+           height="413.5"
+           x="0"
+           y="0" />
+      </defs>
+      <clipPath
+         id="clipPath4197">
+        <use
+           xlink:href="#SVGID_31_"
+           overflow="visible"
+           id="use4199"
+           style="overflow:visible"
+           x="0"
+           y="0"
+           width="570"
+           height="414" />
+      </clipPath>
+      <polygon
+         clip-path="url(#SVGID_94_)"
+         points="488.068,354.877 421.588,363.984 421.588,321.181 488.068,331.198 "
+         id="polygon514"
+         style="fill:none;stroke:#000000;stroke-width:0.5" />
+    </g>
+  </g>
+</svg>
